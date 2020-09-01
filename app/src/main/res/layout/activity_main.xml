@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <EditText
+            android:hint="Mensagem temporária"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <EditText
+            android:hint="Mensagem temporária 2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Button
+            android:text="Botão 1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+        <Button
+            android:text="Botão 2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:text="Botão 3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+        <Button
+            android:layout_weight="1"
+            android:text="Botão 4 bonito"
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_margin="25dp"
+        android:rowCount="3"
+        android:columnCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botão 1 Grid"/>
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botão 2 Grid"/>
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Botão 3 Grid"/>
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botão 4 Grid"/>
+        <Button
+            android:layout_columnWeight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botão 5 Grid"/>
+    </GridLayout>
+    <Button
+        android:text="Botão Externo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
